@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送给最可爱的钟格英</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body>
+    <!-- 欢迎页面 -->
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1>送给最可爱的钟格英</h1>
+            <button id="enter-btn">点击进入</button>
+        </div>
+    </div>
+
+    <!-- 主页面 -->
+    <div id="main-screen" style="display: none;">
+        <canvas id="particle-canvas"></canvas>
+        <div class="content">
+            <h1 id="birthday-text">送给最可爱的钟格英</h1>
+            
+            <div class="image-container">
+                <div class="rotating-fan">
+                    <img src="assets/images/gege.jpg" alt="AI Assistant" class="fan-image">
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="music-toggle">播放/暂停音乐</button>
+                <button id="share-btn">分享</button>
+            </div>
+            
+            <div class="image-gallery">
+                <img src="assets/images/image1.jpg" alt="Cool Image 1" class="gallery-image">
+                <img src="assets/images/image2.jpg" alt="Cool Image 2" class="gallery-image">
+                <img src="assets/images/image3.jpg" alt="Cool Image 3" class="gallery-image">
+            </div>
+        </div>
+
+        <!-- 樱花树 -->
+        <div id="sakura-tree"></div>
+        <div id="sakura-container"></div>
+    </div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sakura.js"></script>
+</body>
+</html> 
